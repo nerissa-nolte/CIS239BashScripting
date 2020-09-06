@@ -1,0 +1,32 @@
+#! /usr/bin/env bash
+  
+############################################################################
+##                                                                        ##
+###        This script reads input and prints output to the screen       ###
+####        Environmental variables used include USER and HOSTNAME      ####
+#####               Command substitution using date command            #####
+######                          Nerissa Nolte                         ######
+#######                          Assignment 2                        #######
+########                                                            ######## 
+############################################################################
+
+# Declare command substituion variable
+timeDateNowGreeting=$(date +"%A, %x at %r %Z")
+
+# New lines for readability
+printf "\n\n"
+
+# Read name input and assign to custom variable 'userName'
+read -p '    Hello! Please enter your name: ' userName
+echo "    Greetings $userName!"
+
+# Use previously declared command substitution
+echo "    Today is $timeDateNowGreeting"
+
+# Example of environmental variables
+echo "    You are currently logged in as: $USER @ $HOSTNAME"
+
+# End of script message
+printf "    Have a pleasant day! \n\n\n"
+
+# END

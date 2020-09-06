@@ -1,0 +1,74 @@
+#!/usr/bin/env bash
+
+############################################################################
+# This script is a light-hearted countdown  from 10 to 0 after which,      #
+# the script will print "The Falcon Heavy has cleared the launchpad!"      #
+# Assignment 5                                                             #
+# CIS239                                                                   #
+# Nerissa Nolte                                                            #
+############################################################################
+
+# Clear the screen for aesthetics
+clear
+
+# Define newlineSleep for later use
+newlineSleep() {
+    printf "\n\n\n"
+    sleep 1
+}
+
+# Use for loop to iterate from 10 to 0
+for i in {10..0}
+do
+    echo $i
+    sleep 1
+done
+
+# Wait and prepare for next part
+sleep 2
+clear
+printf "\n\n\n"
+
+# Fun & simple ASCII art
+printf "\n"
+echo '                        /\'
+echo '                       //\\'
+echo '                      //  \\'
+echo '                     //    \\'
+echo '                     |      |'
+echo '                     |      |'
+echo '                     |      |'		    
+echo '                     |    F |'
+echo '                     |    A |'
+echo '                     |    L |'
+echo '                     |    C |'
+echo '                     |    O |'
+echo '                     |    N |'
+echo '                     |      |'
+echo '                     |    H |'
+echo '                     |    E |'
+echo '                     |    A |'
+echo '                     |    V |'
+echo '                     |    Y |'  
+echo '                     |      |'
+echo '                     |      |'
+echo '                     |      |'
+echo '                     |      |'
+echo '                     |      |'
+echo '                    **********'
+echo '                     ********'
+echo '                      ******'
+echo '                       ****'
+
+# Use previously declared function to blast off
+for n in {1..12} 
+do newlineSleep
+done
+
+# Wait 5 seconds and print message to screen
+sleep 5
+clear
+printf "\n\n\n\n\n\n\n          The Falcon Heavy has cleared the launchpad!"
+printf "\n\n\n\n\n\n\n\n\n"
+
+# END
